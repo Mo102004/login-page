@@ -51,10 +51,15 @@ h1{
     border-bottom: 2px #eee solid;
     color: white;
 }
+.password input::placeholder{
+    text-transform: capitalize;
+}
+
 .ion-icon-email,.ion-icon-password{
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 15px;
+    font-size: 20px;
 }
 
 .check-box{
@@ -80,8 +85,10 @@ button{
     font-weight: 600;
     color: #000;
     margin: 10px 0px;
-
+    letter-spacing: 3px;
+    text-transform: uppercase;    
 }
+
 
 p{
     text-align: center;
@@ -92,4 +99,28 @@ p{
 a{
     text-decoration: none;
     color: blue;
+}
+
+@media (max-width:991px) {
+    section {
+        width: 400px;
+        height: 400px;
+        transform: translateY(190%);
+        }
+    .ion-icon-email,.ion-icon-password {
+        color: #000;
+        border-bottom: white;
+    }
+    .email input::placeholder{ color: #000;}
+    .password input::placeholder{
+        color: #000;
+        text-transform: capitalize;
+    }
+
+}
+
+@media (min-width:1000px) and (max-width:1200px){
+    section {
+        transform: translateY(32%);
+    }
 }

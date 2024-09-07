@@ -14,7 +14,7 @@ body{
 }
 
 section {
-    width: 350px;
+    width: 30%;
     background-color: transparent;
     margin: auto;
     transform: translateY(50%);
@@ -24,6 +24,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.container {
+    width: 300px;
+    padding: 30px;
 }
 
 h1{
@@ -41,7 +46,7 @@ h1{
 }
 
 .email input, .password input{
-    width: 275px;
+    width: 260px;
     height: 50px;
     background: transparent;
     border: none;
@@ -103,24 +108,30 @@ a{
 
 @media (max-width:991px) {
     section {
-        width: 400px;
-        height: 400px;
-        transform: translateY(190%);
+        width: 300px;
+        height: 300px;
+        transform: translateY(50%);
+        padding: 30px 0px 20px 0px;    
         }
-    .ion-icon-email,.ion-icon-password {
-        color: #000;
-        border-bottom: white;
-    }
-    .email input::placeholder{ color: #000;}
-    .password input::placeholder{
-        color: #000;
-        text-transform: capitalize;
-    }
+        .email input, .password input {
+            width: 83%;
+        }
+        .ion-icon-email,.ion-icon-password {
+            color: #000;
+            border-bottom: white;
+        }
+        .email input::placeholder{ color: #000;}
+        .password input::placeholder{
+            color: #000;
+            text-transform: capitalize;
+        }
 
 }
 
 @media (min-width:1000px) and (max-width:1200px){
     section {
+        width: 366px;
+        height: 366px;
         transform: translateY(32%);
     }
 }
